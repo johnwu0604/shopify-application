@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="shopify-application">
 <head>
     <meta charset="UTF-8">
     <title>BrewerMe Orders</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+
+    <script src="js/controllers/mainController.js"></script>
+    <script src="js/services/ordersService.js"></script>
+    <script src="js/core.js"></script> <!-- load our main application -->
 </head>
-<body>
+<body ng-controller="orders">
 <h1>Hello</h1>
+<h1>Total Revenue: {{ totalRevenue }}</h1>
+<div class="orders" ng-repeat="order in orders">
+    <p>{{ order.total_price }}</p>
+</div>
 
 </body>
 </html>
