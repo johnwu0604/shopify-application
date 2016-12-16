@@ -5,3 +5,6 @@ To start application:
 2) Run "npm install"
 3) Run "node server.js"
 4) Go to localhost:5000
+
+You can also open the application at:
+https://john-wu-shopify-application.herokuapp.com/
