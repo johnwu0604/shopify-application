@@ -2,6 +2,7 @@ var request = require("request");
 
 module.exports = function (app) {
 
+    // makes an http request to retrieve the orders from the supplied url from shopify
     app.get('/api/orders', function (req, res) {
         request.get("https://shopicruit.myshopify.com/admin/orders.json?page=1&access_token=c32313df0d0ef512ca64d5b336a0d7c6",function(error,response,body){
             if(error){
